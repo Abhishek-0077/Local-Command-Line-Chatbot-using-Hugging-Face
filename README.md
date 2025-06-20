@@ -21,7 +21,7 @@ This is a lightweight chatbot that:
 ---
 
 ## 🔧 Setup Instructions
-Create a virtual environment
+Create a virtual environment:
 
 -python -m venv venv
 -source venv/bin/activate 
