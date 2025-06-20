@@ -14,6 +14,13 @@ class ChatMemory:
     def trim(self):
         while len(self.memory) > self.max_turns * 2:  # user+assistant per turn
             self.memory.pop(0)
+    
+    def history(self):
+        prompt = ""
+        for entry in self.memory:
+            role = "User" if entry["role"] == "user" else "Assistant"
+            prompt += f"{role}: {entry['content']}\n"
+        return prompt
 
     def get_prompt(self):
         # Convert memory to a single text prompt
@@ -21,5 +28,4 @@ class ChatMemory:
         for entry in self.memory:
             role = "User" if entry["role"] == "user" else "Assistant"
             prompt += f"{role}: {entry['content']}\n"
-        prompt += "Assistant: "
         return prompt
