@@ -4,7 +4,7 @@ from chat_memory import ChatMemory
 
 def main():
     #model_name = "openchat/openchat-3.5-0106"
-    model_loader = ModelLoader(model_name="openchat/openchat-3.5-0106")
+    model_loader = ModelLoader(model_name="microsoft/phi-2")
     memory = ChatMemory(max_turns=5)
     
     print("Chatbot started. Type /exit to quit.")
