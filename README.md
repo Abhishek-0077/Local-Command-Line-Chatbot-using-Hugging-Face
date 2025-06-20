@@ -23,9 +23,9 @@ This is a lightweight chatbot that:
 ## 🔧 Setup Instructions
 Create a virtual environment:
 
--python -m venv venv
--source venv/bin/activate 
--pip install transformers torch
+- python -m venv venv
+- source venv/bin/activate 
+- pip install transformers torch
 
 python interface.py
 
