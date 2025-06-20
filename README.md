@@ -29,6 +29,7 @@ Create a virtual environment:
 
 python interface.py
 
+---
 ## 🎯 Example Usage
 
 You: Hello!
